@@ -2,24 +2,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
 <style>
+  /* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  .caption span.border {
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+
+  .caption span.icon {
+    font-size: 100px;
+
+  }
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 767px) {
+  .caption span.border {
+    font-size: 20px;
+    letter-spacing: 6px;
+  }
+  .caption span.icon {
+    font-size: 60px;
+
+  }
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 375px) {
+  .caption span.border {
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+  .caption span.icon {
+    font-size: 40px;
+
+  }
+}
+
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1 {
   position: relative;
   opacity: 0.65;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-}
-.bgimg-1 {
   background-image: url("sinema.jpg");
   height: 100%;
 }
@@ -37,8 +72,8 @@ body, html {
   background-color: #111;
   color: #fff;
   padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+  
+ 
 }
 
 </style>
@@ -48,9 +83,9 @@ body, html {
 <div class="bgimg-1">
  
   <div class="caption">
-    <span style='font-size:100px;'>&#127909;</span>
+    <span class="icon">&#127909;</span>
     <span class="border">under production</span>
-    <span style='font-size:100px;'>&#127916;</span>
+    <span class="icon">&#127916;</span>
   </div>
   
 </div>
